@@ -1,12 +1,12 @@
-* {
+html {
     font-family: 'Golos Text', sans-serif;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 html,
 body,
-.content-wrapper {
+.container {
     height: 100%;
 }
 
@@ -18,9 +18,12 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
-.content-wrapper {
+/* Container */
+
+.container {
     display: -webkit-flexbox;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -32,41 +35,54 @@ a {
     justify-content: center;
 }
 
+/* Hero */
+
 .hero-wrapper {
     text-align: center;
+    padding: 2rem;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
-    z-index: -2;
+    z-index: -99;
+    width: 300px;
 }
 
-.hero-wrapper h1 {
+.hero-title {
     color: #f4cfa4;
 }
 
-.hero-wrapper,
-.contact-wrapper {
-    padding: 2rem;
-}
-
-.hero {
+.hero-img-wrapper {
     position: relative;
 }
 
-.main-avatar-img {
-    height: auto;
-    max-width: 200px;
+.hero-img {
+    object-fit: cover;
+    width: 250px;
+    max-height: 250px;
+
+    padding: 0 10px 10px 0;
+
+    background-color: transparent;
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);
+
 }
 
-.main-image-backdrop {
-    height: 200px;
-    width: 200px;
+/* .hero-img-backdrop {
+    height: 250px;
+    width: 250px;
     position: absolute;
     background-color: transparent;
-opacity: 1;
-background-size: 12px 12px;
-background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);    z-index: -1;
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);
+    z-index: -1;
     top: .3em;
     left: .3em;
+} */
+
+/* Contact Icons */
+
+.contact-wrapper {
+    padding: 2rem;
 }
 
 .contact-icon-wrapper {
@@ -98,6 +114,7 @@ background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, tra
 
 .telegram i {
     color: #2AABEE;
+    font-size: 2.5rem;
 }
 
 .discord {
