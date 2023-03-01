@@ -1,0 +1,105 @@
+* {
+    font-family: 'Golos Text', sans-serif;
+    color: #fff;
+    font-size: 24px;
+}
+
+html,
+body,
+.content-wrapper {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(70deg, #3F2B96 0%, #A8C0FF 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrapper {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    z-index: -2;
+}
+
+.hero-wrapper h1 {
+    color: #f4cfa4;
+}
+
+.hero-wrapper,
+.contact-wrapper {
+    padding: 2rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.main-avatar-img {
+    height: auto;
+    max-width: 200px;
+}
+
+.main-image-backdrop {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: transparent;
+opacity: 1;
+background-size: 12px 12px;
+background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);    z-index: -1;
+    top: .3em;
+    left: .3em;
+}
+
+.contact-icon-wrapper {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    text-align: center;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.contact-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.telegram {
+    background-color: #fff;
+}
+
+.telegram i {
+    color: #2AABEE;
+}
+
+.discord {
+    background-color: #5865F2;
+}
