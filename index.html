@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tato</title>
+    <link rel="icon" type="image/gif" href="assets/img/favicon.gif">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
@@ -26,26 +27,28 @@
                 </div>
             </div>
             <div class="col text-md-start text-center mt-5 mt-mb-0">
-                <h3 class="mb-3"><a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" target="_blank" class="hello">Hello There,</a> I'm Tato 🥔</h3>
-                    <p>Just your local water sausage committing crimes.</p>
-                    <p>I work in IT and occasionally work on personal code projects.</p>
-                    <p>Feel free to message me!</p>
-                    <div>
-                        <a href="https://twitter.com/OtterPotatoe" target="_blank" class="contact-icon-wrapper twitter">
-                            <i class="contact-icon fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://t.me/ThePotatoe" target="_blank" class="contact-icon-wrapper telegram">
-                            <i class="contact-icon fa-brands fa-telegram"></i>
-                        </a>
-                        <a href="#" id="discord" class="contact-icon-wrapper discord">
-                            <i class="contact-icon fa-brands fa-discord"></i>
-                        </a>
-                    </div>
+                <h3 class="mb-3"><a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" target="_blank"
+                        class="hello">Hello There,</a> I'm Tato 🥔</h3>
+                <p>Just your local water sausage committing crimes.</p>
+                <p>I work in IT and occasionally work on personal code projects.</p>
+                <p>Feel free to message me!</p>
+                <div>
+                    <a href="https://twitter.com/OtterPotatoe" target="_blank" class="contact-icon-wrapper twitter">
+                        <i class="contact-icon fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://t.me/ThePotatoe" target="_blank" class="contact-icon-wrapper telegram">
+                        <i class="contact-icon fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="#" id="discord" onclick="copyToClipboard()" class="contact-icon-wrapper discord">
+                        <i class="contact-icon fa-brands fa-discord"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="toast-container position-fixed top-0 end-0 p-3">
-            <div id="discordToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div id="discordToast" class="toast align-items-center" role="alert" aria-live="assertive"
+                aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body text-muted">
                         Copied to clipboard
@@ -59,14 +62,12 @@
     </div>
 
     <script>
-        const discord_button = document.getElementById('discord')
         const copiedToast = document.getElementById('discordToast')
-        if (discord_button) {
-            discord_button.addEventListener('click', () => {
-                const toast = new bootstrap.Toast(copiedToast)
-                navigator.clipboard.writeText("ThePotatoe#621")
-                toast.show()
-            })
+
+        function copyToClipboard() {
+            const toast = new bootstrap.Toast(copiedToast)
+            navigator.clipboard.writeText("ThePotatoe#621")
+            toast.show()
         }
     </script>
 
