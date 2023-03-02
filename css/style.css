@@ -1,19 +1,11 @@
 html {
-    font-family: 'Golos Text', sans-serif;
-    color: #fff;
-    font-size: 20px;
-}
-
-html,
-body,
-.container {
-    height: 100%;
-}
+    font-size: 1.2rem;
+  }
 
 body {
-    overflow: hidden;
-    margin: 0;
+    font-family: 'Golos Text', sans-serif;
     background: linear-gradient(70deg, #3F2B96 0%, #A8C0FF 100%);
+    color: #fff;
 }
 
 a {
@@ -21,69 +13,24 @@ a {
     color: #fff;
 }
 
-/* Container */
-
-.container {
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Hero */
 
 .hero-wrapper {
-    text-align: center;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    z-index: -99;
-    width: 300px;
+    background-color: #ffffff50;
+    border-radius: 1.5em;
 }
 
 .hero-title {
-    color: #f4cfa4;
+    color: #fff;
 }
 
-.hero-img-wrapper {
-    position: relative;
+/* About */
+
+.hello {
+    border-bottom: 3px dashed #fff;
 }
-
-.hero-img {
-    object-fit: cover;
-    width: 250px;
-    max-height: 250px;
-
-    padding: 0 10px 10px 0;
-
-    background-color: transparent;
-    background-size: 12px 12px;
-    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);
-
-}
-
-/* .hero-img-backdrop {
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    background-color: transparent;
-    background-size: 12px 12px;
-    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1.2px, transparent 0, transparent 50%);
-    z-index: -1;
-    top: .3em;
-    left: .3em;
-} */
 
 /* Contact Icons */
-
-.contact-wrapper {
-    padding: 2rem;
-}
 
 .contact-icon-wrapper {
     display: inline-block;
