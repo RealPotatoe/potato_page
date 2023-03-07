@@ -1,11 +1,11 @@
 html {
     font-size: 1.2rem;
-  }
+    font-family: 'Golos Text', sans-serif;
+}
 
 body {
-    font-family: 'Golos Text', sans-serif;
-    background: linear-gradient(70deg, #3F2B96 0%, #A8C0FF 100%);
     color: #fff;
+    background: linear-gradient(70deg, #3F2B96 0%, #A8C0FF 100%);
 }
 
 a {
